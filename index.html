@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img class="my-profile-logo" style="width: 9em" style="margin-top: 0.80rem;"  src="./assets/assets/logo.jpg" alt="My Profile Logo"
+            onclick="location.href='./#about'">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Despre mine</a></li>
+            <li><a href="#experience">Experiență</a></li>
+            <li><a href="#contact">Contactează-mă</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Radu Ștefan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Despre mine</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiență</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contactează-mă</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/assets/thumbnail_IMG_5775.jpg" alt="Radu Ștefan profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Salut, Sunt </p>
+            <h1 class="title">Radu Ștefan</h1>
+            <p class="section__text__p2">Student la Contabilitate </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/assets/resume.pdf')">
+            Descarcă CV
+            </button>
+            <button class="btn btn-color-1" 
+            onclick="location.href='./#contact'">
+            Informații de Contact
+        </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/assets/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/%C8%99tefan-radu-2b54b4307/'">
+                <img src="./assets/assets/github.png" 
+                alt="My GitHub profile" 
+                class="icon"
+                onclick="location.href='https://github.com/StefanCRadu'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Află Mai Multe</p>
+        <h1 class="title">Despre Mine</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/assets/thumbnail_1F4683D5-D70A-43E7-9580-9317BCC60CD7.jpg" alt="Profile picture"
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/assets/experience.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <h3 style="font-size: small">Experiență</h3>
+                            <p style="font-size: small">Note perfecte la <br/> Analiză Matematică și Contabilitate <br/> Voluntariat </p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/assets/education.png" 
+                            alt="Education icon"
+                            class="icon"
+                            />
+                            <h3 style="font-size: small"> Educație </h3>
+                            <p style="font-size: small">Licență în Management Economic (promoția 2026) <br/> Examen de Diplomă de Bacalaureat</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p style="font-size: small">Sunt un student dedicat la Academia de Studii Economice din București, specializat în Analiză Matematică și Contabilitate. Clasat în primii 3% din academia mea pe baza mediei generale, sunt recunoscut pentru abordarea mea meticuloasă și capacitatea de a aplica cunoștințele într-un mod creativ, ceea ce mă face un membru valoros al oricărei echipe.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Exploreză </p>
+        <h1 class="title">Experiența Mea</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >HTML</h3>
+                                <p > Intermediar </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >CSS</h3>
+                                <p > Intermediar </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >JavaScript</h3>
+                                <p >Cunoștințe de bază</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >TypeScript</h3>
+                                <p >Cunoștințe de bază</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3 >Material UI</h3>
+                                <p >Cunoștințe de bază</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Competențe Analitice</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Contabilitate</h3>
+                                <p>Experimentat</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Matematică</h3>
+                                <p>Experimentat</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Experimentat</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Word</h3>
+                                <p>Experimentat</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/assets/checkmark.png" alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>PowerPoint</h3>
+                                <p>Experimentat</p>
+                            </div>
+                      </article>
+            </div>
+        </div>
+        <img src="./assets/assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#contact'"/>
+    </section>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Intră în</p>
+  <h1 class="title">Contact cu Mine</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:examplemail@gmail.com">Examplu@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/%C8%99tefan-radu-2b54b4307/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Despre Mine</a></li>
+            <li><a href="#experience">Experiență</a></li>
+            <li><a href="#contact">Contactează-mă</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Radu Ștefan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
